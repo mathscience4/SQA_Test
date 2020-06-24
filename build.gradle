@@ -4,11 +4,11 @@ plugins {
 	id "org.sonarqube" version "2.7"
 }
 
-javadoc.options.encoding = 'UTF-8'
-compileJava.options.encoding = 'UTF-8'
+javadoc.options.encoding = 'Big-5'
+compileJava.options.encoding = 'Big-5'
 
 tasks.withType(JavaCompile){ //中文碼問題
-    options.encoding = 'UTF-8'
+    options.encoding = 'Big-5'
 }
 
 repositories {
